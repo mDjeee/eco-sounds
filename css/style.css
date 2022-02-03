@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    color: #ffffff;
+    height: 100vh;
+    width: auto;
+    background-image: url('../img/vorobey.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #000000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    align-content: flex-start;
+    padding-left: 15%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(36%) saturate(290%) hue-rotate(7deg) brightness(88%) contrast(85%);
+}
+
+.nav {
+    padding-right: 15%;
+}
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+    display: inline;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-item:hover{
+    color: #bdae82;
+}
+
+.active {
+    color: #bdae82;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn {
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background: url('../svg/play.svg');
+    filter: brightness(0) saturate(100%) invert(71%) sepia(9%) saturate(1044%) hue-rotate(7deg) brightness(96%) contrast(95%);
+    background-size: cover;
+    transition: 0.5s filter;
+}
+.play-btn:hover {
+    filter: invert(20%);
+    transition-delay:1s;
+}
+.pause {
+    background: yellow;
+    background: url('../svg/pause.svg');
+    filter: brightness(0) saturate(100%) invert(71%) sepia(9%) saturate(1044%) hue-rotate(7deg) brightness(96%) contrast(95%);
+    background-size: cover;
+}
+
+.pause:hover {
+    filter: invert(20%);
+    transition-delay:1s;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    align-items: flex-end;
+    background: #000000;
+    font-size: 20px;
+    line-height: 50px;
+    gap: 27%;
+}
+.copy {
+    height: 10px;
+}
+.rss img{
+    position: relative;
+    top: 10px;
+    width: auto;
+    height: 50px;
+    filter: invert(100%);
+}
